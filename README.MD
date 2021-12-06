@@ -9,7 +9,6 @@ This llvm pass demonstrate how to map llvm IR to source code.
 sudo apt-get install llvm clang 
 
 # Compile LLVM Pass
-mkdir build
 cd build
 cmake ..
 make 
@@ -21,7 +20,7 @@ make
 ```
 # Compile a Target Programs
 cd testcase
-clang -Xclang -load -Xclang ../build/libLLVMIR2SourceMapping.so -o target target.c
+make
 ```
 
 
